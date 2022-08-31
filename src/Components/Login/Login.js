@@ -25,7 +25,7 @@ const Login = () => {
           <Button variant="primary" type="submit">
             Submit
           </Button>
-          <Form.Text className="text-muted">
+          <Form.Text className="text-muted text-center">
             <Link className="forgetPassword" to="/forget">
               Forget Password?{" "}
             </Link>

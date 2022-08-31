@@ -7,3 +7,9 @@ body{
     background: #FFFFFF;
     border-radius: 10px;
 }
+button.btn.btn-primary {
+    width: 100%;
+    background: linear-gradient(180deg, #58B2EB 0%, #5177D0 100%);
+    border-radius: 5px;
+    border: 0;
+}
