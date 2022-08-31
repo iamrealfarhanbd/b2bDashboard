@@ -1,0 +1,9 @@
+body{
+    background: #F9FAFC !important;
+}
+
+.loginForm {
+    padding: 96px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
