@@ -23,6 +23,7 @@ button.btn.btn-primary {
     font-weight: 600;
     font-size: 18px;
     line-height: 23px;
+    text-decoration: none;
 }
 .linkDiv .forgetPassword {
     color: #2B354E;
