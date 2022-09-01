@@ -1,5 +1,6 @@
 import React from "react";
 import Dashboard from "../Dashboard/Dashboard";
+import Settings from "../Settings/Settings";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Layout = ({ children }) => {
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
         <div className="AppGlass">
             <Sidebar />
             <Dashboard />
+            <Settings />
         </div>
       </div>
     </>
