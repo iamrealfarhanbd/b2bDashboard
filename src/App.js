@@ -1,19 +1,15 @@
-import './app.css'
+import "./app.css";
 import { Route, Routes } from "react-router-dom";
-import Dashboard from "./Components/Dashboard/Dashboard";
 import Login from "./Components/Login/Login";
+import Sidebar from "./Components/Dashboard/Sidebar";
 
 function App() {
   return (
     <>
-      <div className="App">
-        <div className="AppGlass">
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="Login" element={<Login />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Sidebar />} />
+        <Route path="Login" element={<Login />} />
+      </Routes>
     </>
   );
 }
