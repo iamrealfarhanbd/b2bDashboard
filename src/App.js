@@ -1,7 +1,7 @@
 import "./app.css";
 import { Route, Routes } from "react-router-dom";
 import Login from "./Components/Login/Login";
-import Sidebar from "./Components/Dashboard/Sidebar";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 function App() {
   return (
