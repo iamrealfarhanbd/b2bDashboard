@@ -5,6 +5,7 @@ import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "./SidebarData";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [selected, setSelected] = useState(0);
@@ -31,7 +32,7 @@ const Dashboard = () => {
     >
       {/* logo */}
       <div className="logo">
-        <img src={Logo} alt="logo" />
+        {/* <img src={Logo} alt="logo" /> */}
         <span>
         Dash<span>B</span>oard
         </span>
@@ -40,14 +41,14 @@ const Dashboard = () => {
       <div className="menu">
         {SidebarData.map((item, index) => {
           return (
-            <div
+            <Link
               className={selected === index ? "menuItem active" : "menuItem"}
               key={index}
-              onClick={() => setSelected(index)}
-            >
+              onClick={() => setSelected(index)} 
+              to={item.path}>
               <item.icon />
               <span>{item.heading}</span>
-            </div>
+            </Link>
           );
         })}
         {/* signoutIcon */}

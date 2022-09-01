@@ -1,6 +1,7 @@
 :root {
     --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
     --orange: #fca61f;
+    --white: #ffffff;
     --black: #242d49;
     --gray: #788097;
     --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
@@ -13,7 +14,7 @@
   
   .App {
     /* padding: 0.5rem 3.5rem; */
-    color: var(--black);
+    color: var(--white);
     /* background: linear-gradient(
       106.37deg,
       #ffe1bc 29.63%,
@@ -22,19 +23,16 @@
     ); */
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Inter', sans-serif;
   }
   
   .AppGlass {
     display: grid;
-    height: 97%;
-    width: 97%;
+    height: 100%;
+    width: 100%;
     background: var(--glass);
-    border-radius: 2rem;
     gap: 16px;
-    grid-template-columns: 11rem auto 20rem;
+    grid-template-columns: 15rem auto 20rem;
     overflow: hidden;
   }
   

@@ -8,11 +8,12 @@ import {
 export const SidebarData = [
   {
     icon: UilEstate,
-    path: '/',
+    path: 'dashboard',
     heading: "Dashboard",
   },
   {
     icon: UilChart,
+    path: 'setting',
     heading: 'Setting'
   },
 ];
