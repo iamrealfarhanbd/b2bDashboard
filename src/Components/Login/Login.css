@@ -13,3 +13,20 @@ button.btn.btn-primary {
     border-radius: 5px;
     border: 0;
 }
+
+.linkDiv{
+    text-align: center;
+}
+.linkDiv a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+}
+.linkDiv .forgetPassword {
+    color: #2B354E;
+}
+.linkDiv .adminLink {
+    color: #5075D0;
+}
