@@ -9,7 +9,7 @@ const Cards = () => {
   return (
       <Container>
         <Row>
-        {cardsData.map((card, id) =><CardBox card={card}/> )}
+        {cardsData.map((card, id) =><CardBox key={card.id} card={card}/> )}
         </Row>
       </Container>
  

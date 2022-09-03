@@ -1,28 +1,30 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-import Logo from "../../imgs/logo.png";
+// import Logo from "../../imgs/logo.png";
 import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "./SidebarData";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
 
-  const [expanded, setExpaned] = useState(true)
+  const [expanded, setExpaned] = useState(true);
 
   const sidebarVariants = {
     true: {
-      left : '0'
+      left: "0",
     },
-    false:{
-      left : '-60%'
-    }
-  }
-  console.log(window.innerWidth)
+    false: {
+      left: "-60%",
+    },
+  };
+  console.log(window.innerWidth);
   return (
     <>
+      <div className="dasboardBody">
+        <div className="dashboardLayout">
           <div
             className="bars"
             style={expanded ? { left: "60%" } : { left: "5%" }}
@@ -66,6 +68,9 @@ const Sidebar = () => {
             </div>
           </motion.div>
 
+          <Outlet />
+        </div>
+      </div>
     </>
   );
 };
