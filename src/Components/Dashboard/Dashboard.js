@@ -13,13 +13,6 @@ const Dashboard = () => {
         <Cards />
     
         <Tables />
-        <Tables />
-        <Tables />
-        <Tables />
-        <Tables />
-        <Tables />
-        <Tables />
-        <Tables />
       </div>
     </>
   );
