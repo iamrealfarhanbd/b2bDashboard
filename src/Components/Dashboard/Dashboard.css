@@ -1,10 +1,19 @@
 .MainDash{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.MainDash{
     /* padding-top: 1rem; */
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (max-width: 1200px) {
+
     .MainDash{
         justify-content:flex-start;
         margin-top: 2rem;
@@ -17,3 +26,6 @@
         align-items: center;
     }
 }
+
+
+
