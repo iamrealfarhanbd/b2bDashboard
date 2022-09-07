@@ -4,7 +4,7 @@
 }
 .dashboardLayout {
   display: flex;
-  height: 100% !important;
+  height: 100vh ;
 }
 .sidebar {
   display: flex;
