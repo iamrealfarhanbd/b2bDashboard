@@ -9,6 +9,7 @@ const TableRow = ({ element }) => {
         <td>{element.name}</td>
         <td>{element.name}</td>
         <td>{element.category}</td>
+        <td>{element.date}</td>
       </tr>
     </>
   );

@@ -5,11 +5,9 @@
 }
 
 
-
-.MainDash{
-    /* padding-top: 1rem; */
+.MainBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 1200px) {

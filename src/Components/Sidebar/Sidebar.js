@@ -6,6 +6,7 @@ import { SidebarData } from "./SidebarData";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import { Link, Outlet } from "react-router-dom";
+import RightSidebar from "../RightSidebar/RightSidebar";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
@@ -69,6 +70,7 @@ const Sidebar = () => {
           </motion.div>
 
           <Outlet />
+         {/* <RightSidebar /> */}
         </div>
       </div>
     </>

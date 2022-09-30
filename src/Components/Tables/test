@@ -1,0 +1,63 @@
+// console.log(element)
+  const [sportList, setSportList] = useState([]);
+
+  const [selectedCategory, setSelectedCategory] = useState();
+  const [newSelectedCategory, setnewSelectedCategory] = useState();
+
+  // // Add default value on page load
+  useEffect(() => {
+    setSportList(defaultSports);
+  }, []);
+
+  // Function to get filtered list
+  function getFilteredList() {
+    // Avoid filter when selectedCategory is null
+    if (!selectedCategory) {
+      return sportList;
+    } else {
+      const newValue =  selectedCategory.map(item=>item);
+      console.log("newValue",newValue)
+      const  boss = sportList.filter(item => item.category === selectedCategory);
+      console.log("bosss",boss)
+      return boss
+    }
+  }
+
+  // Avoid duplicate function calls with useMemo
+  var filteredList = useMemo(getFilteredList, [selectedCategory, sportList]);
+console.log("filteredList",filteredList)
+
+  function handleCategoryChange(data) {
+    const store = data.map(item=>item.label);
+    
+    setSelectedCategory(store)
+  }
+
+
+
+
+
+
+  const [product,setProduct]=useState([])
+  const [selectedCategory, setSelectedCategory] = useState([];);
+
+  useEffect(() => {
+    setProduct(defaultSports);
+  }, []);
+
+  // Function to get filtered list
+  function getFilteredList() {
+    // Avoid filter when selectedCategory is null
+    if (!selectedCategory) {
+      return product;
+    } else {
+      console.log("kwkdmad",selectedCategory,product)
+
+      const  boss = product.filter(item => console.log(item.category === selectedCategory));
+      console.log("bosss",boss)
+      return boss
+    }
+  }
+
+  // Avoid duplicate function calls with useMemo
+  var filteredList = useMemo(getFilteredList, [selectedCategory, product]);

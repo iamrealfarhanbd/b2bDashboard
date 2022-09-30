@@ -1,28 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import Select from "react-select";
 
-const Dropdown = ({ id, label, value, options, onChange }) => {
+const Dropdown = ({ selectedCategory,onChange }) => {
+    const optionList = [
+        { value: "Indoor", label: "Indoor" },
+        { value: "Outdoor", label: "Outdoor" },
+        { value: "Aquatics", label: "Aquatics" }
+      ];
+
+      console.log("selectedCategory", selectedCategory);
+
+//   const [selectedOptions, setSelectedOptions] = useState();
   return (
-    <div>
-      <label>
-        {/* <select value={value} onChange={onChange}>
-          {options.map((option) => (
-            <option key={id} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </select> */}
+
         <select
             name="category-list"
             id="category-list"
             onChange={onChange}
+            
           >
             <option value="">All</option>
             <option value="Outdoor">Outdoor</option>
             <option value="Indoor">Indoor</option>
             <option value="Aquatics">Aquatics</option>
           </select>
-      </label>
-    </div>
+
+
   );
 };
 
